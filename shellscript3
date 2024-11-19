@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Prompt user for two numbers
+echo "Enter the first number: "
+read num1
+echo "Enter the second number: "
+read num2
+
+# Compare the numbers and find the largest
+if [ $num1 -gt $num2 ]; then
+    echo "The largest number is: $num1"
+elif [ $num2 -gt $num1 ]; then
+    echo "The largest number is: $num2"
+else
+    echo "Both numbers are equal."
+fi
+
+
+
+
+#!/bin/bash
+
+# Initialize sum
+sum=0
+
+# Use for loop to calculate the sum
+for ((i = 1; i <= 100; i++))
+do
+    sum=$((sum + i))
+done
+
+# Display the sum
+echo "The sum of numbers from 1 to 100 is: $sum"
